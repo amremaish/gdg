@@ -1,0 +1,53 @@
+:root {
+  /* Google palette */
+  --google-blue: #4285f4;
+  --google-red: #ea4335;
+  --google-yellow: #fbbc05;
+  --google-green: #34a853;
+
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-hover: #e8eaed;
+  --text: #202124;
+  --text-muted: #5f6368;
+  --accent: var(--google-blue);
+  --accent-hover: #3367d6;
+  --border: #dadce0;
+  --font-sans: 'DM Sans', 'Google Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(60, 64, 67, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
