@@ -335,6 +335,17 @@
 .section-materials .btn-primary { background: var(--google-blue); }
 .section-materials .btn-primary:hover { background: var(--accent-hover); }
 
+.section-workshop .card-icon { color: var(--text); }
+.section-workshop .btn-github {
+  background: #24292f;
+  color: #fff;
+}
+.section-workshop .btn-github:hover {
+  background: #363b42;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(36, 41, 47, 0.35);
+}
+
 .section-social h2::after {
   content: '';
   display: block;

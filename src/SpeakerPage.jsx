@@ -10,6 +10,8 @@ const SOCIAL_LINKS = {
   github: 'https://github.com/amremaish',
 }
 
+const WORKSHOP_REPO = 'https://github.com/amremaish/UserManagement'
+
 const PDF_LABEL = 'Download presentation slides (PDF)'
 
 export default function SpeakerPage() {
@@ -61,6 +63,25 @@ export default function SpeakerPage() {
             download
           >
             {PDF_LABEL}
+          </a>
+        </section>
+
+        <section className="card section-workshop">
+          <div className="card-icon" aria-hidden="true">
+            <GitHubIcon />
+          </div>
+          <h2>Workshop project</h2>
+          <p className="card-desc">
+            Code and resources from the hands-on workshop. Clone, run, and explore on GitHub.
+          </p>
+          <a
+            href={WORKSHOP_REPO}
+            className="btn btn-primary btn-github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon />
+            <span>View on GitHub</span>
           </a>
         </section>
 
